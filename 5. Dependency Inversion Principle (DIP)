@@ -1,0 +1,13 @@
+public interface Notifier {
+    void alert(String message);
+}
+
+public class WeatherTracker {
+    public void notify(Notifier notifier, String weather) {
+        notifier.alert("Weather is " + weather);
+    }
+}
+
+public class Emailer implements Notifier {
+    public void alert(String message) { /* Send email */ }
+}
