@@ -1,0 +1,14 @@
+public abstract class Bird {}
+
+public abstract class FlyingBird extends Bird {
+    public abstract void fly();
+}
+
+public class Parrot extends FlyingBird {
+    @Override
+    public void fly() { // implementation  }
+}
+
+public class Ostrich extends Bird {
+    // Ostrich no longer forced to implement fly()
+}
