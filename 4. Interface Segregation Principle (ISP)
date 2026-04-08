@@ -1,0 +1,17 @@
+public interface Workable {
+    void work();
+}
+
+public interface Feedable {
+    void eat();
+}
+
+public class HumanWorker implements Workable, Feedable {
+    public void work() {}
+    public void eat() {}
+}
+
+public class RobotWorker implements Workable {
+    public void work() {}
+    // No longer needs to implement eat()
+}
